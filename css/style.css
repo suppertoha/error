@@ -146,7 +146,13 @@ html, body {
 }
 
 .error__button .btn {
-  cursor: pointer;
+  max-width: 236px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 123.6%;
+  text-decoration: none;
 }
 
 .error__image {
@@ -250,5 +256,4 @@ html, body {
 
 .box-buttons__right {
   flex: 1 1 auto;
-  min-width: 236px;
 }
