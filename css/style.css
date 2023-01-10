@@ -1,0 +1,254 @@
+/*Reset*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 992px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .container {
+    max-width: 1360px;
+  }
+}
+
+.error {
+  padding: 25px 0;
+  overflow: hidden;
+  background: #F5F5F5;
+  height: 100%;
+}
+
+@media screen and (min-width: 920px) {
+  .error {
+    padding: 50px 0;
+  }
+}
+
+.error__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.error__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 920px) {
+  .error__inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.error__content {
+  align-self: center;
+}
+
+@media screen and (min-width: 920px) {
+  .error__content {
+    margin-right: 50px;
+  }
+}
+
+.error__title {
+  font-family: 'Furore';
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.07em;
+  color: #293A50;
+  margin-bottom: 10px;
+  font-size: 30px;
+  line-height: 123.6%;
+  text-align: center;
+}
+
+@media screen and (min-width: 920px) {
+  .error__title {
+    text-align: left;
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .error__title {
+    font-size: 70px;
+  }
+}
+
+.error__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #293A50;
+  margin-bottom: 25px;
+  text-align: center;
+  max-width: 300px;
+}
+
+@media screen and (min-width: 920px) {
+  .error__text {
+    text-align: left;
+    max-width: 563px;
+    font-size: 26px;
+    line-height: 130%;
+    margin-bottom: 34px;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .error__text {
+    max-width: 530px;
+  }
+}
+
+.error__button {
+  font-weight: 500;
+  font-size: 16px;
+  display: none;
+}
+
+@media screen and (min-width: 920px) {
+  .error__button {
+    display: block;
+  }
+}
+
+.error__button .btn {
+  cursor: pointer;
+}
+
+.error__image {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.error__image span {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  position: relative;
+  z-index: 3;
+  max-width: 217px;
+}
+
+.error__image span img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 920px) {
+  .error__image span {
+    max-width: 360px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .error__image span {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .error__image span {
+    max-width: 656px;
+  }
+}
+
+.error__image:before {
+  content: '';
+  display: block;
+  width: 335px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  z-index: 1;
+  background: url(../images/error-bg.png) no-repeat bottom/contain;
+}
+
+@media screen and (min-width: 920px) {
+  .error__image:before {
+    width: 505px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .error__image:before {
+    width: 600px;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .error__image:before {
+    width: 1014px;
+  }
+}
+
+.btn {
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  transition: all .2s linear;
+}
+
+.btn--path {
+  background-color: #cc9c63;
+  position: relative;
+  -webkit-clip-path: polygon(100% 0, 100% 67%, 90% 100%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 67%, 90% 100%, 0 100%, 0 0);
+}
+
+.btn--path:hover {
+  background-color: #293a50;
+}
+
+.btn--path.btn--path:active {
+  background-color: #293a50;
+}
+
+.box-buttons__right {
+  flex: 1 1 auto;
+  min-width: 236px;
+}
